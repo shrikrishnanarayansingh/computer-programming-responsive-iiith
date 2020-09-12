@@ -36,6 +36,9 @@ window.view = {
 		var inputValue = document.getElementById('simpleLoopInput').value
 		model.inp = Number(inputValue)
 		this.clearExecutionSection()
+		if(inputValue > 20){
+			alert("Invalid Input")
+		}
 	},
 	getNestedInput: function() {
 		var inputValue = document.getElementById('nestedLoopInput').value
